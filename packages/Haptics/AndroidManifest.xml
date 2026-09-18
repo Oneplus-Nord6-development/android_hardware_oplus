@@ -6,8 +6,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="org.lineageos.settings.haptics"
     android:versionCode="1"
-    android:versionName="1.0"
-    android:sharedUserId="android.uid.system">
+    android:versionName="1.0">
 
     <uses-permission android:name="android.permission.VIBRATE" />
 
@@ -18,7 +17,6 @@
             android:name=".HapticSettingsActivity"
             android:exported="true"
             android:label="@string/haptic_style_title"
-            android:icon="@drawable/ic_haptic"
             android:theme="@style/Theme.SubSettingsBase.Expressive">
             <intent-filter>
                 <action android:name="com.android.settings.action.IA_SETTINGS" />
@@ -32,9 +30,6 @@
             <meta-data
                 android:name="com.android.settings.summary"
                 android:resource="@string/haptic_style_summary" />
-            <meta-data
-                android:name="com.android.settings.icon"
-                android:resource="@drawable/ic_haptic" />
             <meta-data
                 android:name="com.android.settings.order"
                 android:value="-95" />
